@@ -4,7 +4,7 @@
 A data-driven application dedicated to helping users recognize the value of making energy-smart purchases. The site includes user authentication, search and browse for energy-efficient products, data-visualization, and an energy-savings calculator.
 
 ## Technology and Concepts 
-MVC, User Authentication with Passport, Sequelize, Node and Express Web Servers, MySQL with Sequelize ORM, Handlebars, Energy Star API, Materialize, Energy Savings Calculator
+MVC, User Authentication with Passport, Sequelize, Node and Express Web Servers, MySQL with Sequelize ORM, Handlebars, Energy Star API, Materialize, Energy Savings Calculator, Data Visualization with D3.js
 
 ## Team Members
 - [Richard Vargas](https://github.com/RichardVargas1)
@@ -18,3 +18,15 @@ https://energy-insights.herokuapp.com/
 https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4
 
 ## Future Development 
+
+## Preview 
+
+Home: 
+
+![alt text](http://i66.tinypic.com/1z554ec.png)
+
+Efficiency Dashboard:
+
+! [alt text](http://i67.tinypic.com/fu5et0.png)
+
+
