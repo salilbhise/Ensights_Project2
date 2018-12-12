@@ -1,0 +1,113 @@
+@function -ocha-a($assert, $type) {
+  $value: map-get($assert, value);
+  $negative: map-get($assert, negative);
+  $typeof: type-of($value);
+
+  @if not $negative {
+    @return -ocha-check-equal($typeof, $type, $assert,
+      '#{$value} is a #{$type}',
+      'Expected #{$value} to be a #{$type}'
+    );
+  }
+  @else {
+    @return -ocha-check-equal($typeof, $type, $assert,
+      '#{$value} is a #{$type}',
+      'Expected #{$value} to not be a #{$type}'
+    );
+  }
+
+  @return $assert;
+}
+
+@function -ocha-an($assert, $type) {
+  @return -ocha-a($assert, $type);
+}
+
+@function -ocha-ok($assert, $null) {
+  $value: map-get($assert, value);
+  $negative: map-get($assert, negative);
+  $true: true;
+
+  @if $value == null or $value == none {
+    $true: false;
+  }
+  @if type-of($value) == 'number' and $value == 0 {
+    $true: false;
+  }
+  @if type-of($value) == 'list' and length($value) == 0 {
+    $true: false;
+  }
+
+  @if not $negative {
+    @return -ocha-check-equal($true, true, $assert,
+      '#{$value} is truthy',
+      'Expected #{$value} to be truthy'
+    );
+  }
+  @else {
+    @return -ocha-check-equal($true, false, $assert,
+      '#{$value} is falsey',
+      'Expected #{$value} to be falsey'
+    );
+  }
+}
+
+@function -ocha-true($assert, $null) {
+  $value: map-get($assert, value);
+  $negative: map-get($assert, negative);
+
+  @if not $negative {
+    @return -ocha-check-equal($value, true, $assert,
+      '#{$value} is true',
+      'Expected #{$value} to be true'
+    );
+  }
+  @else {
+    @return -ocha-check-equal($value, false, $assert,
+      '#{$value} is not true',
+      'Expected #{$value} to not be true'
+    );
+  }
+
+  @return $assert;
+}
+
+@function -ocha-false($assert, $null) {
+  $value: map-get($assert, value);
+  $negative: map-get($assert, negative);
+
+  @if not $negative {
+    @return -ocha-check-equal($value, false, $assert,
+      '#{$value} is false',
+      'Expected #{$value} to be false'
+    );
+  }
+  @else {
+    @return -ocha-check-equal($value, true, $assert,
+      '#{$value} is not false',
+      'Expected #{$value} to not be false'
+    );
+  }
+
+  @return $assert;
+}
+
+@function -ocha-null($assert, $null) {
+  $value: map-get($assert, value);
+  $negative: map-get($assert, negative);
+
+  @if not $negative {
+    @return -ocha-check-equal($value, null, $assert,
+      'null is null',
+      'Expected #{$value} to be null'
+    );
+  }
+  @else {
+    @return -ocha-check-equal($value, true, $assert,
+      '#{$value} is not null',
+      'Expected #{$value} to not be null'
+    );
+  }
+
+  @return $assert;
+}

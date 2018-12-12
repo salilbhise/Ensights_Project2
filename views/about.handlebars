@@ -1,0 +1,134 @@
+<section class="team-container">
+	<h1 class="team-h1">About Us</h1>
+	<div class="team-member">
+		<img class="team-photo" src="/assets/img/richardvargas.png">
+		<h3>Richard Vargas</h3>
+		<span>
+			<h6>Up-and-coming web developer who is currently working in the Oil & Gas industry. Skills are very novice, however,
+				my determination remains high.</h6>
+		</span>
+		<a href="https://github.com/RichardVargas1"><span><img src="/assets/img/GitHub.png"></span></a>
+	</div>
+	<div class="team-member">
+		<img class="team-photo" src="/assets/img/salilbhise.png">
+		<h3>Salil Bhise</h3>
+		<span>
+			<h6>Silicon Beach Operations Manager currently studying Full Stack Web Development at the Houston Coding Bootcamp.</h6>
+		</span>
+		<a href="https://github.com/salilbhise"><span><img src="/assets/img/GitHub.png"></span></a>
+	</div>
+	<div class="team-member">
+		<img class="team-photo" src="/assets/img/rez.png">
+		<h3>Rezwana Rubaiya</h3>
+		<span>
+			<h6>A business student starting her journey in Information Technology at the Houston Coding Bootcamp presented by the University of Texas at Austin.</h6>
+		</span>
+		<a class="github" href="https://github.com/rezwanayeem"><span><img src="/assets/img/GitHub.png"></span></a>
+	</div>
+
+</section>
+
+<style>
+	body {
+		font-family: 'Ubuntu', sans-serif;
+		background-image: url("/assets/img/hexblack.jpg");
+		background-size: cover;
+		background-repeat: repeat;
+		background-position: cover;
+	}
+
+	h1.team-h1 {
+		margin: 0;
+		position: absolute;
+		top: 16px;
+		text-align: center;
+		left: 37%;
+		font-family: 'Ubuntu', sans-serif;
+		font-style: bold;
+		background-color: transparent;
+		padding: 0px 20px;
+		color: #8ADB52;
+	}
+
+	.team-container {
+		background: transparent;
+		width: 80%;
+		margin: auto;
+		padding-top: 10em;
+		padding-bottom: 5em;
+		margin-top: -3em;
+		position: relative;
+	}
+
+	.team-member {
+		width: 20%;
+		float: left;
+		text-align: center;
+		margin-right: 20%;
+	}
+
+	.team-member:last-child {
+		margin-right: 0;
+	}
+
+	.team-member span,
+
+	.team-member h3 {
+		max-width: 100%;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 25px;
+	}
+
+	.team-member h3 {
+		color: #fff;
+	}
+
+	.team-member h6 {
+		color: #8ADB52;
+	}
+
+	.team-member span {
+		display: block;
+
+	}
+
+	.team-photo {
+		border-radius: 50%;
+		text-align: center;
+		margin: auto;
+		max-width: 100%;
+		height: auto;
+		transition: 0.1s transform ease-in-out;
+	}
+
+	.team-photo:hover {
+		transform: scale(0.9);
+		cursor: pointer;
+	}
+
+	/* code for phone layout */
+	@media (max-width:850px) {
+		.team-member {
+			width: 25%;
+			margin-left: 4%;
+			margin-right: 4%;
+			margin-bottom: 40px;
+
+		}
+	}
+
+	@media (max-width:650px) {
+		.team-member {
+			float: none;
+			display: block;
+			margin: 50px auto;
+			width: 100%;
+			text-align: center;
+		}
+
+		.team-member h3,
+		.team-member span {
+			margin: 15px auto;
+		}
+	}
+</style>

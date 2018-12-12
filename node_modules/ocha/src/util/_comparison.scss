@@ -1,0 +1,10 @@
+@function -ocha-comparison-value($assert) {
+  // List length check
+  @if map-get($assert, length) {
+    @return length(map-get($assert, value));
+  }
+  // Regular value check
+  @else {
+    @return map-get($assert, value);
+  }
+}

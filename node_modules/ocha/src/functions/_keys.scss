@@ -1,0 +1,55 @@
+@function -ocha-all($assert) {
+  @return map-merge($assert, (all: true));
+}
+
+@function -ocha-any($assert) {
+  @return map-merge($assert, (all: false));
+}
+
+@function -ocha-keys($assert, $keys) {
+  $map: map-get($assert, value);
+  $negative: map-get($assert, negative);
+  $all: map-get($assert, all);
+  $only: if($all, map-get($assert, only), false);
+  $result: null;
+
+  $matches: 0;
+
+  @each $key, $value in $map {
+    // Look for the key in the input map in the list of expected keys
+    @if index($keys, $key) {
+      $matches: $matches + 1;
+    }
+    // If this test is that the map ONLY has certain keys, then it fails if a key isn't found in the list
+    @else if $only {
+      $result: false;
+    }
+  }
+
+  // If the test didn't already fail, we have one more check to do
+  @if $result != false {
+    // If the "all" flag is used, then every key in the list needs to have been found
+    @if $all {
+      $result: if($matches == length($keys), true, false);
+    }
+    // If the "all" flag is not used, then at least one key in the list needs to have been found
+    @else {
+      $result: if($matches > 0, true, false);
+    }
+  }
+
+  $map: inspect($map);
+
+  @if not $negative {
+    @return -ocha-check-equal($result, true, $assert,
+      '#{$map} has keys #{$keys}',
+      'Expected #{$map} to have keys #{$keys}'
+    );
+  }
+  @else {
+    @return -ocha-check-equal($result, false, $assert,
+      '#{$map} does not have keys #{$keys}',
+      'Expected #{$map} to not have keys #{$keys}'
+    );
+  }
+}

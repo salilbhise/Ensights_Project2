@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ensights</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/assets/img/ensightsfavicon.png">
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <!-- Home/Search Style Sheet -->
+    <link rel="stylesheet" href="/assets/css/home.css" type="text/css">
+    <!-- Snatchbot Local Style Sheet -->
+    <link rel="stylesheet" href="/assets/css/webchat.css " type="text/css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+    <!-- 404 Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+    <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper grey darken-4">
+                <div class="container-nav">
+                    <a href="/login" class="brand-logo ">Ensights</a>
+                    <ul class="right ">
+                        <li id="home ">
+                            <a href="/home ">Home</a>
+                        </li>
+                        <li id="about ">
+                            <a href="/about ">About</a>
+                        </li>
+                        <li id="dashboards ">
+                            <a href="#">Dashboards</a>
+                            <ul>
+                                <li><a href="/washers">Washers</a></li>
+                                <li><a href="/dryers">Dryers</a></li>
+                                <li><a href="/fridges">Refrigerators</a></li>
+                                <li><a href="/dishwashers">Dishwashers</a></li>
+                            </ul>
+                        </li>
+                        <li id="dashboards ">
+                            <a href="#">Account</a>
+                            <ul>
+                                <li><a href="/login">Login</a></li>
+                                <li><a href="/profile">Profile</a></li>
+                                <li><a href="/login">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    {{{ body }}}
+
+
+
+    <!-- jQuery Reference -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+
+    <!-- Snatchbot in lower right corner of app -->
+    <script src="https://snatchbot.me/sdk/webchat.min.js "></script>
+    <script> Init('?botID=38148&appID=webchat', 300, 350, 'https://dvgpba5hywmpo.cloudfront.net/media/image/BpvRQM3EEWY13YCZAd33DOTa8', 'bubble', '#8ADB52', 90, 90, 62.99999999999999, '', '1', '#FFFFFF', 0); /* for authentication of its users, you can define your userID (add &userID={login}) */ </script>
+
+    <!-- D3.js for Data Visualization -->
+    <script src="https://d3js.org/d3.v5.min.js "></script>
+
+    <!-- My Script -->
+    <script type="text/javascript " src="/assets/js/app.js "></script>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<div class="grid">
+    <form action="" method="get" class="search">
+        <div class="form__field">
+            <input type="search" name="search" placeholder="What are you looking for?" class="form__input">
+            {{!-- For demo purposes only  --}}
+            <a href="/searchresultsdemo">
+            <input type="submit" value="Search" class="button">
+            </a>
+        </div>
+    </form>
+</div>
+
+<br><br><br>
+
+<div class="col-container">
+    <div class="row">
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/assets/img/smartwasher.png">
+                    {{!-- <span class="card-title">Washers</span> --}}
+                </div>
+                <div class="card-content">
+                    <p>Clothes washers that have earned the ENERGY STAR use 25% less energy and approximately 33% less
+                        water than standard models.</p>
+                </div>
+                <div class="card-action">
+                    <a href="/washers">Residential Washers</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/assets/img/dryertoss.png">
+                    {{!-- <span class="card-title">Dryers</span> --}}
+                </div>
+                <div class="card-content">
+                    <p> An ENERGY STAR certified clothes washer and dryer can save a household more than $370 over the
+                        lifetime of the pair.</p>
+                </div>
+                <div class="card-action">
+                    <a href="/dryers">Residential Dryers</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/assets/img/handfridge.png">
+                    {{!-- <span class="card-title">Refrigerators</span> --}}
+                </div>
+                <div class="card-content">
+                    <p>With an ENERGY STAR certified refrigerator, you can maximize your energy and dollar savings
+                        without sacrificing the features you want.</p>
+                </div>
+                <div class="card-action">
+                    <a href="/fridges">Residential Refrigerators</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/assets/img/dishclose.png">
+                    {{!-- <span class="card-title">Dishwashers</span> --}}
+                </div>
+                <div class="card-content">
+                    <p>ENERGY STAR certified dishwashers use less energy than conventional models, which helps reduce
+                        air pollution and combat global climate change.</p>
+                </div>
+                <div class="card-action">
+                    <a href="/dishwashers">Residential Dishwashers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .card {
+        background-color: #42454e;
+        color: #fff;   
+    }
+
+    @use postcss-cssnext;
+
+    .align {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    :root {
+        --gridMaxWidth: 320px;
+        --gridWidth: 90%;
+    }
+
+    .grid {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: var(--gridMaxWidth);
+        width: var(--gridWidth);
+    }
+
+    :root {
+        --htmlFontSize: 100%;
+
+        --bodyBackgroundColor: #61646d;
+        --bodyColor: #000;
+        --bodyFontFamily: 'Open Sans';
+        --bodyFontFamilyFallback: sans-serif;
+        --bodyFontSize: 14px;
+        --bodyFontWeight: 400;
+        --bodyLineHeight: 1.5;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    ::placeholder {
+        color: #42454e;
+    }
+
+    input {
+        appearance: none;
+        border: none;
+        font: inherit;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+    }
+
+    input[type="search"] {
+        appearance: textfield;
+        box-sizing: content-box;
+    }
+
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+        appearance: none;
+    }
+
+    input[type="submit"] {
+        cursor: pointer;
+    }
+
+    .form__field {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form__input {
+        flex-grow: 1;
+    }
+
+    :root {
+        --searchBackgroundColor: #42454e;
+        --searchBorderRadius: 2px;
+        --searchFontSize: 12px;
+        --searchPadding: 8px;
+
+        --searchInputBorderRadius: 2px;
+
+        --searchInputSearchBackgroundColor: #fff;
+        --searchInputSearchColor: #42454e;
+        --searchInputSearchPaddingHorizontal: 8px;
+        --searchInputSearchPaddingVertical: 6px;
+
+        --searchInputButtonBackgroundColor: #8ADB52;
+        --searchInputButtonColor: #fff;
+        --searchInputButtonFontWeight: bold;
+        --searchInputButtonPaddingHorizontal: 10px;
+        --searchInputButtonPaddingVertical: 6px;
+        --searchInputButtonHoverBackgroundColor: #8ADB52;
+    }
+
+    .search {
+        background-color: var(--searchBackgroundColor);
+        border-radius: var(--searchBorderRadius);
+        font-size: var(--searchFontSize);
+        padding: var(--searchPadding);
+    }
+
+    .search input[type="search"],
+    .search input[type="submit"] {
+        border-radius: var(--searchInputBorderRadius);
+    }
+
+    .search input[type="search"] {
+        background-color: var(--searchInputSearchBackgroundColor);
+        color: var(--searchInputSearchColor);
+        padding: var(--searchInputSearchPaddingVertical) var(--searchInputSearchPaddingHorizontal);
+    }
+
+    .search input[type="submit"] {
+        background-color: var(--searchInputButtonBackgroundColor);
+        color: var(--searchInputButtonColor);
+        font-weight: var(--searchInputButtonFontWeight);
+        margin-left: .5rem;
+        padding: var(--searchInputButtonPaddingVertical) var(--searchInputButtonPaddingHorizontal);
+    }
+
+    .search input[type="submit"]:focus,
+    .search input[type="submit"]:hover {
+        background-color: var(--searchInputButtonHoverBackgroundColor);
+    }
+</style>
