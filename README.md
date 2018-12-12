@@ -27,6 +27,6 @@ Home:
 
 Efficiency Dashboard:
 
-! [alt text](http://i67.tinypic.com/fu5et0.png)
+![alt text](http://i67.tinypic.com/fu5et0.png)
 
 
