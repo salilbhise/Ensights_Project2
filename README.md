@@ -15,9 +15,12 @@ MVC, User Authentication with Passport, Sequelize, Node and Express Web Servers,
 https://energy-insights.herokuapp.com/
 
 ## Original Project Repo
-https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4
+Main: https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4
+[Insights](https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4/pulse)
+[Project Board](https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4/projects/1)
 
 ## Future Development 
+Adavanced search features, local and Amazon availability for purchase, product reviews, Favorites List
 
 ## Preview 
 
