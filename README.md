@@ -29,4 +29,6 @@ Efficiency Dashboard:
 
 ![alt text](http://i67.tinypic.com/fu5et0.png)
 
+Data Visualization:
 
+![alt text](http://i65.tinypic.com/2u7wv9t.png)
