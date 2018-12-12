@@ -17,4 +17,4 @@ https://energy-insights.herokuapp.com/
 ## Original Project Repo
 https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4
 
-## Future Devlopment 
+## Future Development 
