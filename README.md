@@ -4,7 +4,7 @@
 A data-driven application dedicated to helping users recognize the value of making energy-smart purchases using Full Stack Web Development. The site includes user authentication, search and browse for energy-efficient products, data-visualization, and an energy-savings calculator.
 
 ## Technology and Concepts 
-MVC, User Authentication with Passport, Sequelize, Node and Express Web Servers, MySQL with Sequelize ORM, Handlebars, Energy Star API, Materialize, Energy Savings Calculator, Data Visualization with D3.js
+MVC, User Authentication with [Passport](http://www.passportjs.org/), [Sequelize](http://docs.sequelizejs.com/), Node and [Express](https://expressjs.com/) Web Servers, MySQL with Sequelize ORM, [Handlebars](https://handlebarsjs.com/), [Energy Star API](https://www.energystar.gov/productfinder/advanced), [Materialize](https://materializecss.com/), Energy Savings Calculator, Data Visualization with [D3.js](https://d3js.org/)
 
 ## Team Members
 - [Richard Vargas](https://github.com/RichardVargas1)
