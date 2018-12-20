@@ -16,7 +16,7 @@ https://energy-insights.herokuapp.com/
 
 ## Original Project Repo
 Main: https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4
-- [Insights](https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4/pulse)
+- [Insights](https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4/graphs/contributors)
 - [Project Board](https://github.com/RichardVargas1/Project_2_UTHOU201808FSF_p2g4/projects/1)
 
 ## Future Development 
